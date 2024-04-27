@@ -49,12 +49,12 @@ const Header = () => {
                                             color: isActive ? "green" : "grey",
                                         };
                                     }} className=" btn w-[92px] h-[48px]"><span className=" text-lg ">Home</span></NavLink></li>
-                                    <li><NavLink to="/yours-spots" style={({ isActive }) => {
+                                    <li><NavLink to="/yours-places" style={({ isActive }) => {
                                         return {
                                             fontWeight: isActive ? "bold" : "",
                                             color: isActive ? "green" : "grey",
                                         };
-                                    }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Your Spots</span></NavLink></li>
+                                    }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">My Places</span></NavLink></li>
                                 </> :
                                 <>
                                     <li ><NavLink to="/" style={({ isActive }) => {
@@ -83,7 +83,7 @@ const Header = () => {
                                 <div>
                                 <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 gap-y-1 shadow bg-base-100 rounded-box w-[135px]">
                                     <li><a onClick={handleLogOut} className="btn w-[120px] h-[48px] bg-[red] hover:bg-[red] text-[#FFFFFF]">Log out</a></li>
-                                    <li><NavLink to="/user-profile" className="btn w-[120px] h-[48px] bg-[blue] hover:bg-[blue] text-[#FFFFFF]">Your Profile</NavLink></li>
+                                    <li><NavLink to="/user-profile" className="btn w-[120px] h-[48px] bg-[blue] hover:bg-[blue] text-[#FFFFFF]">Profile</NavLink></li>
                                 </ul>
                                 </div>
                             </div>

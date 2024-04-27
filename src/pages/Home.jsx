@@ -51,7 +51,9 @@ const Home = () => {
                     The call of adventure whispers on the wind. Here at <span className="font-bold text-emerald-400">Your Travel</span>, we believe travel isn't just a vacation, it's a chance to broaden your horizons and collect memories that last a lifetime.  Explore our curated destinations and embark on unforgettable journeys that will enrich your soul and leave you yearning for more.
                 </h1>
             </div>
-            
+            <div>
+                
+            </div>
         </>
     );
 };
