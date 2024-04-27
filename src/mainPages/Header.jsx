@@ -49,12 +49,24 @@ const Header = () => {
                                             color: isActive ? "green" : "grey",
                                         };
                                     }} className=" btn w-[92px] h-[48px]"><span className=" text-lg ">Home</span></NavLink></li>
-                                    <li><NavLink to="/yours-places" style={({ isActive }) => {
+                                    <li><NavLink to="/all-places" style={({ isActive }) => {
                                         return {
                                             fontWeight: isActive ? "bold" : "",
                                             color: isActive ? "green" : "grey",
                                         };
-                                    }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">My Places</span></NavLink></li>
+                                    }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">All Places</span></NavLink></li>
+                                    <li><NavLink to="/add-places" style={({ isActive }) => {
+                                        return {
+                                            fontWeight: isActive ? "bold" : "",
+                                            color: isActive ? "green" : "grey",
+                                        };
+                                    }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Add Places</span></NavLink></li>
+                                    <li><NavLink to="/my-places" style={({ isActive }) => {
+                                        return {
+                                            fontWeight: isActive ? "bold" : "",
+                                            color: isActive ? "green" : "grey",
+                                        };
+                                    }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">My List</span></NavLink></li>
                                 </> :
                                 <>
                                     <li ><NavLink to="/" style={({ isActive }) => {
@@ -63,6 +75,12 @@ const Header = () => {
                                             color: isActive ? "green" : "grey",
                                         };
                                     }} className=" btn w-[92px] h-[48px]"><span className=" text-lg ">Home</span></NavLink></li>
+                                    <li><NavLink to="/all-places" style={({ isActive }) => {
+                                        return {
+                                            fontWeight: isActive ? "bold" : "",
+                                            color: isActive ? "green" : "grey",
+                                        };
+                                    }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">All Places</span></NavLink></li>
                                 </>
                         }
 
@@ -77,7 +95,7 @@ const Header = () => {
                                 </div>
                             </div>
                             <div className="dropdown">
-                                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                                <div tabIndex={0} role="button" className="btn btn-accent btn-circle">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                                 </div>
                                 <div>
@@ -90,7 +108,7 @@ const Header = () => {
                         </> :
                         <>
                             <div className="dropdown">
-                                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                                <div tabIndex={0} role="button" className="btn btn-accent btn-circle">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                                 </div>
                                 <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 gap-y-1 shadow bg-base-100 rounded-box w-[135px]">

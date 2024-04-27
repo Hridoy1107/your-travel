@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/Dr6FXh2/800px-Eiffel-tower-Paris.jpg",
+      "tourist_spot_name": "Eiffel Tower",
+      "country_name": "France",
+      "location": "Paris",
+      "short_description": "Iconic iron lattice tower, built in the 19th century, with panoramic views of the city from its three viewing platforms.",
+      "average_cost": "$20-25",
+      "seasonality": "Year-round",
+      "travel_time": "3-4 days",
+      "total_visitors_per_year": 7000000
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/Nsk8N26/R.jpg",
+      "tourist_spot_name": "Machu Picchu",
+      "country_name": "Peru",
+      "location": "Cusco Region",
+      "short_description": "Incan citadel set high in the Andes Mountains, renowned for its sophisticated dry-stone walls and panoramic views.",
+      "average_cost": "$45-55",
+      "seasonality": "Dry season",
+      "travel_time": "5-6 days",
+      "total_visitors_per_year": 1500000
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/1zTwLSW/OIP.jpg",
+      "tourist_spot_name": "Great Wall of China",
+      "country_name": "China",
+      "location": "Various locations",
+      "short_description": "Built along the northern borders of China to protect the Chinese states and empires against the raids and invasions of the nomadic groups of the Eurasian Steppe.",
+      "average_cost": "$10-15",
+      "seasonality": "Year-round",
+      "travel_time": "4-5 days",
+      "total_visitors_per_year": 10000000
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/vLqnVwF/R-1.jpg",
+      "tourist_spot_name": "Grand Canyon",
+      "country_name": "United States",
+      "location": "Arizona",
+      "short_description": "Massive canyon carved by the Colorado River, known for its visually overwhelming size and its intricate and colorful landscape.",
+      "average_cost": "$35-40",
+      "seasonality": "Year-round",
+      "travel_time": "2-3 days",
+      "total_visitors_per_year": 6000000
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/5RWV6qq/R-2.jpg",
+      "tourist_spot_name": "Santorini",
+      "country_name": "Greece",
+      "location": "Cyclades",
+      "short_description": "Stunning Greek island famous for its dramatic views, stunning sunsets, and volcanic-sand beaches.",
+      "average_cost": "$150-200",
+      "seasonality": "Peak season",
+      "travel_time": "5-7 days",
+      "total_visitors_per_year": 2000000
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/JxJGHhn/OIP-1.jpg",
+      "tourist_spot_name": "Sydney Opera House",
+      "country_name": "Australia",
+      "location": "Sydney",
+      "short_description": "Iconic performing arts center featuring multiple venues for various performances, located on the shores of Sydney Harbour.",
+      "average_cost": "$40-50",
+      "seasonality": "Year-round",
+      "travel_time": "3-4 days",
+      "total_visitors_per_year": 1000000
+    }
+  ]
+  

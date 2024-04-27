@@ -1,10 +1,21 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useEffect, useState } from "react";
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import { FreeMode, Autoplay } from 'swiper/modules';
 import { Typewriter } from 'react-simple-typewriter'
+import HomePlaces from './HomePlaces';
 
 const Home = () => {
+
+    const [places, setPlaces] = useState([])
+
+    useEffect(() => {
+        fetch('places.json')
+            .then(res => res.json())
+            .then(data => setPlaces(data));
+    }, []);
+
     return (
         <>
             <div className="mt-5">
@@ -51,8 +62,10 @@ const Home = () => {
                     The call of adventure whispers on the wind. Here at <span className="font-bold text-emerald-400">Your Travel</span>, we believe travel isn't just a vacation, it's a chance to broaden your horizons and collect memories that last a lifetime.  Explore our curated destinations and embark on unforgettable journeys that will enrich your soul and leave you yearning for more.
                 </h1>
             </div>
-            <div>
-                
+            <div className="grid grid-cols-3 gap-6 mt-10 animate__animated animate__fadeInUp">
+                {
+                    places.map(place => <HomePlaces key={place.id} place={place}></HomePlaces>)
+                }
             </div>
         </>
     );
