@@ -55,12 +55,12 @@ const Header = () => {
                                             color: isActive ? "green" : "grey",
                                         };
                                     }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">All Places</span></NavLink></li>
-                                    <li><NavLink to="/add-places" style={({ isActive }) => {
+                                    <li><NavLink to="/add-place" style={({ isActive }) => {
                                         return {
                                             fontWeight: isActive ? "bold" : "",
                                             color: isActive ? "green" : "grey",
                                         };
-                                    }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Add Places</span></NavLink></li>
+                                    }} className=" btn w-[160px] h-[48px]"><span className=" text-lg ">Add Place</span></NavLink></li>
                                     <li><NavLink to="/my-places" style={({ isActive }) => {
                                         return {
                                             fontWeight: isActive ? "bold" : "",

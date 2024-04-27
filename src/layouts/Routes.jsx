@@ -29,6 +29,9 @@ const Routes = createBrowserRouter([
                 path: "/user-profile",
                 element: <PrivateRoute><UserPage></UserPage></PrivateRoute> ,
             },
+            {
+                path: "/add-place"
+            },
         ]
     },
 ]);
