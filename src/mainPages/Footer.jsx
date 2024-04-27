@@ -3,7 +3,7 @@ import { IoEarthOutline } from "react-icons/io5";
 const Footer = () => {
     return (
         <>
-            <footer className="animate__animated animate__fadeInUp footer mt-10 footer-center p-10 bg-gray-700 rounded-2xl text-primary-content">
+            <footer className="animate__animated animate__fadeInUp footer mt-10 footer-center p-10 bg-gray-500 rounded-2xl text-primary-content">
                 <aside>
                     <IoEarthOutline className="w-[35px] h-[40px]" />
                     <p className="font-bold">

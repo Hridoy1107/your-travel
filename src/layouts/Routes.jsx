@@ -6,6 +6,7 @@ import Register from "../profiles/Register";
 import PrivateRoute from "./PrivateRoute";
 import UserPage from "../privatePages/UserPage";
 import Home from "../pages/Home";
+import AddPlace from "../privatePages/AddPlace";
 
 const Routes = createBrowserRouter([
     {
@@ -27,10 +28,11 @@ const Routes = createBrowserRouter([
             },
             {
                 path: "/user-profile",
-                element: <PrivateRoute><UserPage></UserPage></PrivateRoute> ,
+                element: <PrivateRoute><UserPage></UserPage></PrivateRoute>,
             },
             {
-                path: "/add-place"
+                path: "/add-place",
+                element: <PrivateRoute><AddPlace></AddPlace></PrivateRoute>,
             },
         ]
     },
