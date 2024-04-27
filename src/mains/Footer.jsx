@@ -1,14 +1,13 @@
-
-
+import { IoEarthOutline } from "react-icons/io5";
 
 const Footer = () => {
     return (
         <>
             <footer className="animate__animated animate__fadeInUp footer mt-10 footer-center p-10 bg-gray-700 rounded-2xl text-primary-content">
                 <aside>
-                
+                    <IoEarthOutline className="w-[35px] h-[40px]" />
                     <p className="font-bold">
-                        Apple Real Estate Ltd. <br />Providing reliable estates since 2004
+                        Your Travel Website <br />Helping with beautiful tourist sites since 2012
                     </p>
                     <p>Copyright © 2024 - All right reserved</p>
                 </aside>

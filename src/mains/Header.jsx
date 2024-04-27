@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { useContext } from "react";
+import 'animate.css';
+import { IoEarthOutline } from "react-icons/io5";
 
 const Header = () => {
 
@@ -16,7 +18,8 @@ const Header = () => {
         <>
             <div className="navbar bg-base-100 w-[1210px]">
                 <div className="navbar-start">
-                    <h1 className="animate__animated animate__zoomInLeft animate__fast animate__repeat-1 text-3xl h-[48px] ml-2 font-bold text-transparent bg-clip-text bg-gradient-to-br from-green-400 via-amber-400 to-red-400 animate-text">Apple Real Estate</h1>
+                    <IoEarthOutline className="w-[35px] h-[40px]" />
+                    <h1 className="animate__animated animate__zoomInLeft animate__fast animate__repeat-1 text-3xl h-[48px] ml-2 mt-1 font-bold text-transparent bg-clip-text bg-gradient-to-br from-green-800 via-teal-700 to-slate-600 animate-text">Your Travel</h1>
                 </div>
                 <div className="navbar-center flex">
                     <ul className="menu menu-horizontal px-1 gap-x-4">
