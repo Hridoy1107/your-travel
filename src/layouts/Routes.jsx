@@ -5,6 +5,7 @@ import Login from "../profiles/Login";
 import Register from "../profiles/Register";
 import PrivateRoute from "./PrivateRoute";
 import UserPage from "../privatePages/UserPage";
+import Home from "../pages/Home";
 
 const Routes = createBrowserRouter([
     {
@@ -14,7 +15,7 @@ const Routes = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <h1>Hello to Home</h1>,
+                element: <Home></Home>,
             },
             {
                 path: '/login',
