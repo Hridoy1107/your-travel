@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "./Root";
-import ErrorPage from "../mains/ErrorPage";
+import ErrorPage from "../mainPages/ErrorPage";
 
 
 const Routes = createBrowserRouter([
