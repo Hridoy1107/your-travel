@@ -25,7 +25,7 @@ const Routes = createBrowserRouter([
                 element: <Register></Register>,
             },
             {
-                path: "/user",
+                path: "/user-profile",
                 element: <PrivateRoute><UserPage></UserPage></PrivateRoute> ,
             },
         ]

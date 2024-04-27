@@ -132,7 +132,7 @@ const Register = () => {
                     {
                         success && <p className="text-green-600">{success}</p>
                     }
-                    <h1 className="font-semibold">Register with social accounts</h1>
+                    <h1 className="font-semibold">Register with other accounts</h1>
                     <div className="flex gap-3 ml-56 my-1">
                         <div onClick={handleGoogleSignIn} className="btn btn-outline h-12 w-12"><FaGoogle /></div>
                         <div onClick={handleFacebookSignIn} className="btn btn-outline h-12 w-12"><FaFacebook /></div>
