@@ -38,7 +38,7 @@ const Register = () => {
             .then(result => {
                 console.log(result.user);
                 setSuccess('User Created Successfully.')
-                navigate('/user');
+                navigate('/user-profile');
 
                 updateProfile(result.user, {
                     displayName: name,

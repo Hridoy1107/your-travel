@@ -7,6 +7,7 @@ import PrivateRoute from "./PrivateRoute";
 import UserPage from "../privatePages/UserPage";
 import Home from "../pages/Home";
 import AddPlace from "../privatePages/AddPlace";
+import AllPlaces from "../pages/AllPlaces";
 
 const Routes = createBrowserRouter([
     {
@@ -33,6 +34,11 @@ const Routes = createBrowserRouter([
             {
                 path: "/add-place",
                 element: <PrivateRoute><AddPlace></AddPlace></PrivateRoute>,
+            },
+            {
+                path: "/all-places",
+                element: <AllPlaces></AllPlaces>,
+                loader: () => fetch('http://localhost:5000/place')
             },
         ]
     },

@@ -1,4 +1,4 @@
-// import Swal from 'sweetalert2'
+import Swal from 'sweetalert2'
 
 const AddPlace = () => {
 
@@ -23,26 +23,25 @@ const AddPlace = () => {
 
         console.log(newPlace);
 
-        // send data to the server
-        // fetch('http://localhost:5000/place', {
-        //     method: 'POST',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(newPlace)
-        // })
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         console.log(data);
-        //         if(data.insertedId){
-        //             Swal.fire({
-        //                 title: 'Success!',
-        //                 text: 'Place Added Successfully',
-        //                 icon: 'success',
-        //                 confirmButtonText: 'Cool'
-        //               })
-        //         }
-        //     })
+        fetch('http://localhost:5000/place', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newPlace)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if(data.insertedId){
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Place Added Successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                      })
+                }
+            })
     }
 
     return (        
@@ -146,7 +145,7 @@ const AddPlace = () => {
                                 <span className="label-text text-black">Details</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="details" placeholder="Place Details" className="input input-bordered w-full h-[100px]" />
+                                <input type="text" name="details" placeholder="Place Details" className="input input-bordered w-full h-[100px]"/>
                             </label>
                         </div>
                     </div>

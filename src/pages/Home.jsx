@@ -50,6 +50,7 @@ const Home = () => {
                     modules={[FreeMode, Autoplay]}
                 >
                     <SwiperSlide><img className="w-full h-[600px] rounded-2xl" src="https://i.ibb.co/B3zQr9P/2147732543.jpg" /></SwiperSlide>
+                    <SwiperSlide><img className="w-full h-[600px] rounded-2xl" src="https://i.ibb.co/gj2BTS0/ships-6073537-640.jpg" /></SwiperSlide>
                     <SwiperSlide><img className="w-full h-[600px] rounded-2xl" src="https://i.ibb.co/wMkysRS/29599.jpg" /></SwiperSlide>
                     <SwiperSlide><img className="w-full h-[600px] rounded-2xl" src="https://i.ibb.co/RPDW2sV/28417.jpg" /></SwiperSlide>
                     <SwiperSlide><img className="w-full h-[600px] rounded-2xl" src="https://i.ibb.co/kqpBdNT/1356.jpg" /></SwiperSlide>
