@@ -9,6 +9,7 @@ import Home from "../pages/Home";
 import AddPlace from "../privatePages/AddPlace";
 import AllPlaces from "../pages/AllPlaces";
 import PlaceDetails from "../privatePages/PlaceDetails";
+import MyPlaces from "../privatePages/MyPlaces";
 
 const Routes = createBrowserRouter([
     {
@@ -37,14 +38,19 @@ const Routes = createBrowserRouter([
                 element: <PrivateRoute><AddPlace></AddPlace></PrivateRoute>,
             },
             {
+                path: "/my-places",
+                element: <PrivateRoute><MyPlaces></MyPlaces></PrivateRoute>,
+                loader: () => fetch('http://localhost:5000/place'),
+            },
+            {
                 path: "/all-places",
                 element: <AllPlaces></AllPlaces>,
-                loader: () => fetch('http://localhost:5000/place')
+                loader: () => fetch('http://localhost:5000/place'),
             },
             {
                 path: "/details/:id",
                 element: <PrivateRoute><PlaceDetails></PlaceDetails></PrivateRoute>,
-                loader: () => fetch('http://localhost:5000/place')
+                loader: () => fetch('http://localhost:5000/place'),
             },
         ]
     },

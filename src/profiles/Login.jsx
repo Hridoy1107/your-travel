@@ -104,7 +104,7 @@ const Login = () => {
                         <div onClick={handleFacebookSignIn} className="btn btn-outline h-12 w-12"><FaFacebook /></div>
                         <div onClick={handleGithubSignIn} className="btn btn-outline h-12 w-12"><FaGithub /></div>
                     </div>
-                    <p className="text-center mt-4">Already have an account? <Link className="text-blue-600 font-bold" to="/register">Register</Link></p>
+                    <p className="text-center mt-4">Don't have an account? <Link className="text-blue-600 font-bold" to="/register">Register</Link></p>
                 </div>
             </div>
         </>
