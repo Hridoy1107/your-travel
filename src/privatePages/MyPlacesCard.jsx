@@ -69,7 +69,7 @@ const MyPlacesCard = ({ place1, places, setPlaces }) => {
                         </div>
                     </div>
                     <div className="mt-3 flex gap-2">
-                    <NavLink to="/edit" className="btn w-1/2 my-2 btn-active btn-warning">Edit</NavLink>
+                    <NavLink to={`/editPlace/${_id}`} className="btn w-1/2 my-2 btn-active btn-warning">Edit</NavLink>
                     <button to="/delete" onClick={() => handleDelete(_id)} className="btn w-1/2 my-2 btn-active btn-error">Delete</button>
                     </div>
                 </div>
