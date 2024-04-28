@@ -19,7 +19,7 @@ const HomePlaces = ({place}) => {
                 {tourist_spot_name}
                 </h2>
                 <div className="flex my-2 gap-3">
-                <h1 className="font-medium text-black">Location: <span className="text-sky-600">{location}, {country_name}</span> </h1>
+                <h1 className="font-medium text-black">Location: <span className="text-sky-600">{location}, {country_name}</span></h1>
                 </div>
                 <div className="h-[100px] w-[320px] my-1 relative right-8 font-medium">
                     <p className="text-rose-500">{short_description}</p>
