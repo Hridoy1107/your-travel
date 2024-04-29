@@ -23,7 +23,7 @@ const AddPlace = () => {
 
         console.log(newPlace);
 
-        fetch('http://localhost:5000/place', {
+        fetch('https://your-travel-server.vercel.app/place', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

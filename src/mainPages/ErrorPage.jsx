@@ -13,7 +13,7 @@ export default function ErrorPage() {
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
-      <NavLink to="/" className="btn mt-2 hover:bg-slate-400 bg-slate-400">Back to Home Page</NavLink>
+      <NavLink to="/" className="btn mt-2 text-black hover:bg-slate-400 bg-slate-400">Back to Home Page</NavLink>
     </div>
   );
 }

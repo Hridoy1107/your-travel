@@ -41,22 +41,22 @@ const Routes = createBrowserRouter([
             {
                 path: "/my-places",
                 element: <PrivateRoute><MyPlaces></MyPlaces></PrivateRoute>,
-                loader: () => fetch('http://localhost:5000/place'),
+                loader: () => fetch('https://your-travel-server.vercel.app/place'),
             },
             {
                 path: "/editPlace/:id",
                 element: <PrivateRoute><Edit></Edit></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/place/${params.id}`),
+                loader: ({ params }) => fetch(`https://your-travel-server.vercel.app/place/${params.id}`),
             },
             {
                 path: "/all-places",
                 element: <AllPlaces></AllPlaces>,
-                loader: () => fetch('http://localhost:5000/place'),
+                loader: () => fetch('https://your-travel-server.vercel.app/place'),
             },
             {
                 path: "/details/:id",
                 element: <PrivateRoute><PlaceDetails></PlaceDetails></PrivateRoute>,
-                loader: () => fetch('http://localhost:5000/place'),
+                loader: () => fetch('https://your-travel-server.vercel.app/place'),
             },
         ]
     },

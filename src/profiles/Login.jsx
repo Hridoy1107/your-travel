@@ -27,7 +27,7 @@ const Login = () => {
                 navigate('/');
 
                 const user = { email };
-                fetch('http://localhost:5000/user', {
+                fetch('https://your-travel-server.vercel.app/user', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'

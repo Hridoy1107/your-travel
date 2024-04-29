@@ -29,7 +29,7 @@ const Edit = () => {
 
         console.log(editedPlace);
 
-        fetch(`http://localhost:5000/place/${_id}`, {
+        fetch(`https://your-travel-server.vercel.app/place/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

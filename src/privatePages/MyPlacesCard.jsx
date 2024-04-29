@@ -20,7 +20,7 @@ const MyPlacesCard = ({ place1, places, setPlaces }) => {
             if (result.isConfirmed) {
 
 
-                fetch(`http://localhost:5000/place/${_id}`, {
+                fetch(`https://your-travel-server.vercel.app/place/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
