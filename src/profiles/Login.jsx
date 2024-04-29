@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { FaEye, FaEyeSlash, FaGoogle, FaFacebook, FaGithub } from 'react-icons/fa';
+import Swal from 'sweetalert2'
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -24,6 +25,27 @@ const Login = () => {
                 setSuccess('Login Successfully.')
                 e.target.reset();
                 navigate('/');
+
+                const user = { email };
+                fetch('http://localhost:5000/user', {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/json'
+                    },
+                    body: JSON.stringify(user)
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.insertedId) {
+                            console.log('user added to the database')
+                            Swal.fire({
+                                title: 'Success!',
+                                text: 'User Login Successfully',
+                                icon: 'success',
+                                confirmButtonText: 'Cool'
+                              })
+                        }
+                    })
                 
             })
             .catch(error => {

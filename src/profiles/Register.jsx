@@ -5,6 +5,7 @@ import { FaEye, FaEyeSlash, FaGoogle, FaFacebook, FaGithub } from 'react-icons/f
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import Swal from 'sweetalert2'
 
 const Register = () => {
     const [registerError, setRegisterError] = useState('');
@@ -39,6 +40,27 @@ const Register = () => {
                 console.log(result.user);
                 setSuccess('User Created Successfully.')
                 navigate('/user-profile');
+
+                const user = { email };
+                fetch('http://localhost:5000/user', {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/json'
+                    },
+                    body: JSON.stringify(user)
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.insertedId) {
+                            console.log('user added to the database')
+                            Swal.fire({
+                                title: 'Success!',
+                                text: 'User Registered Successfully',
+                                icon: 'success',
+                                confirmButtonText: 'Cool'
+                              })
+                        }
+                    })
 
                 updateProfile(result.user, {
                     displayName: name,

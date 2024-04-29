@@ -29,7 +29,6 @@ const Edit = () => {
 
         console.log(editedPlace);
 
-
         fetch(`http://localhost:5000/place/${_id}`, {
             method: 'PUT',
             headers: {

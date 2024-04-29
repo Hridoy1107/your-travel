@@ -15,7 +15,7 @@ const MyPlaces = () => {
             </div>
             <div className="grid grid-cols-3 gap-6 mt-10 animate__animated animate__fadeInUp">
                 {
-                    places.map(place1 => <MyPlacesCard key={place1.email} place1={place1} places={places} setPlaces={setPlaces}></MyPlacesCard>)
+                    places.map(place1 => <MyPlacesCard key={place1._id} place1={place1} places={places} setPlaces={setPlaces}></MyPlacesCard>)
                 }
             </div>
             <div>
