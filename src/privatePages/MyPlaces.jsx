@@ -1,11 +1,29 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import MyPlacesCard from "./MyPlacesCard";
-import { useState } from 'react';
+import { useState, useContext, useEffect, } from 'react';
+import { AuthContext } from "../provider/AuthProvider";
 
 const MyPlaces = () => {
+    
+    const { user } = useContext(AuthContext);
+    const [places, setPlaces] = useState([]);
+    const navigate = useNavigate();
 
-    const loadedPlaces = useLoaderData();
-    const [places, setPlaces] = useState(loadedPlaces);
+    const url = `https://your-travel-server.vercel.app/place?email=${user?.email}`;
+    useEffect(() => {
+        fetch(url, {
+            method: 'GET'
+        })
+            .then(res => res.json())
+            .then(data => {
+                if(!data.error){
+                    setPlaces(data)
+                }
+                else{
+                    navigate('/');
+                }
+            })
+    }, [url, navigate]);
 
     return (
         <>

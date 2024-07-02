@@ -11,6 +11,7 @@ import AllPlaces from "../pages/AllPlaces";
 import PlaceDetails from "../privatePages/PlaceDetails";
 import MyPlaces from "../privatePages/MyPlaces";
 import Edit from "../privatePages/Edit";
+import HomeDetails from "../privatePages/HomeDetails";
 
 const Routes = createBrowserRouter([
     {
@@ -41,7 +42,6 @@ const Routes = createBrowserRouter([
             {
                 path: "/my-places",
                 element: <PrivateRoute><MyPlaces></MyPlaces></PrivateRoute>,
-                loader: () => fetch('https://your-travel-server.vercel.app/place'),
             },
             {
                 path: "/editPlace/:id",
@@ -57,6 +57,11 @@ const Routes = createBrowserRouter([
                 path: "/details/:id",
                 element: <PrivateRoute><PlaceDetails></PlaceDetails></PrivateRoute>,
                 loader: () => fetch('https://your-travel-server.vercel.app/place'),
+            },
+            {
+                path: "/home-details/:id",
+                element: <PrivateRoute><HomeDetails></HomeDetails></PrivateRoute>,
+                loader: () => fetch('../places.json')
             },
         ]
     },

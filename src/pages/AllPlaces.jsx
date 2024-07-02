@@ -8,6 +8,9 @@ const AllPlaces = () => {
 
     return (
         <>
+        {
+            places? (
+                <>
             <div className="mt-5">
                 <Slide triggerOnce>
                     <p className=" text-2xl mt-2 px-10 text-center font-medium text-teal-700">
@@ -20,6 +23,11 @@ const AllPlaces = () => {
                     places.map(place1 => <PlaceCard key={place1._id} place1={place1}></PlaceCard>)
                 }
             </div>
+        </>
+            ) :
+            (<span className="loading loading-spinner loading-lg"></span>)
+        }
+        
         </>
     );
 };

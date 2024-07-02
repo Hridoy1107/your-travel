@@ -49,11 +49,10 @@ const Home = () => {
                     }}
                     modules={[FreeMode, Autoplay]}
                 >
-                    <SwiperSlide><img className="w-full h-[600px] rounded-2xl" src="https://i.ibb.co/B3zQr9P/2147732543.jpg" /></SwiperSlide>
-                    <SwiperSlide><img className="w-full h-[600px] rounded-2xl" src="https://i.ibb.co/gj2BTS0/ships-6073537-640.jpg" /></SwiperSlide>
-                    <SwiperSlide><img className="w-full h-[600px] rounded-2xl" src="https://i.ibb.co/wMkysRS/29599.jpg" /></SwiperSlide>
-                    <SwiperSlide><img className="w-full h-[600px] rounded-2xl" src="https://i.ibb.co/RPDW2sV/28417.jpg" /></SwiperSlide>
-                    <SwiperSlide><img className="w-full h-[600px] rounded-2xl" src="https://i.ibb.co/kqpBdNT/1356.jpg" /></SwiperSlide>
+                    <SwiperSlide><img className="w-full h-[500px] rounded-2xl" src="https://i.ibb.co/Fz1MVwC/Tourist-Attractions-In-Southeast-Asia-Temples-Bagan.jpg" /></SwiperSlide>
+                    <SwiperSlide><img className="w-full h-[500px] rounded-2xl" src="https://i.ibb.co/7yTDmVd/R-6.jpg" /></SwiperSlide>
+                    <SwiperSlide><img className="w-full h-[500px] rounded-2xl" src="https://i.ibb.co/PDQS7f8/R-7.jpg" /></SwiperSlide>
+                    <SwiperSlide><img className="w-full h-[500px] rounded-2xl" src="https://i.ibb.co/9VpHdNf/R-8.jpg" /></SwiperSlide>
                 </Swiper>
             </div>
             <div className="mt-5">

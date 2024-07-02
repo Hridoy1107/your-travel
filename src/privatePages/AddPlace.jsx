@@ -1,6 +1,10 @@
 import Swal from 'sweetalert2'
+import { AuthContext } from "../provider/AuthProvider";
+import { useContext } from "react";
 
 const AddPlace = () => {
+
+    const {user} = useContext(AuthContext);
 
     const handleAddPlace = event => {
         event.preventDefault();
@@ -55,7 +59,7 @@ const AddPlace = () => {
                                 <span className="label-text text-black">Name</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="name" placeholder="Your Name" className="input input-bordered w-full" />
+                                <input type="text" defaultValue={user?.displayName} name="name" placeholder="Your Name" className="input input-bordered w-full" />
                             </label>
                         </div>
                         <div className="form-control w-1/2 ml-4">
@@ -63,7 +67,7 @@ const AddPlace = () => {
                                 <span className="label-text text-black">Email</span>
                             </label>
                             <label className="input-group">
-                                <input type="text" name="email" placeholder="Your Email" className="input input-bordered w-full" />
+                                <input type="text" defaultValue={user?.email} name="email" placeholder="Your Email" className="input input-bordered w-full" />
                             </label>
                         </div>
                     </div>
